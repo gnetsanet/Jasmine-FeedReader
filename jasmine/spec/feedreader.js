@@ -33,7 +33,7 @@ $(function() {
          */
 
         it('Has all URLs defined',function(){
-            allFeeds.forEach(function(aFeed){
+            allFeeds.forEach(function(aFeed) {
                 url = aFeed.url;
                 expect(url).toBeDefined();
                 expect(url.length).not.toBe(0);
@@ -45,6 +45,14 @@ $(function() {
          * in the allFeeds object and ensures it has a name defined
          * and that the name is not empty.
          */
+
+         it('Has all URL names defined', function() {
+            allFeeds.forEach(function(aFeed) {
+                urlName = aFeed.name;
+                expect(urlName).toBeDefined();
+                expect(urlName.length).not.toBe(0);
+            });
+         });
     });
 
 
