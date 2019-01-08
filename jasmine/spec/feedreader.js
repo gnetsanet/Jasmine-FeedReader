@@ -62,7 +62,7 @@ $(function() {
         
         // a test that ensures the menu element is hidden by default.
         it('Menu element is hidden by default', function() {
-            expect("menu-hidden"===document.body.className).toBeTruthy();
+            expect(document.body.classList.contains('menu-hidden')).toBeTruthy();
         });
 
         it('Menu toggles when clicked', function() {
