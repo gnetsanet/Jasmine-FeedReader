@@ -68,11 +68,11 @@ $(function() {
         it('Menu toggles when clicked', function() {
             //Very first click, shows menu
             document.body.querySelector('.menu-icon-link').click();
-            expect(document.querySelector('.menu-hidden')).toBeNull();
+            expect(document.body.classList.contains('menu-hidden')).toBe(false);
 
             //Second click hides menu
             document.body.querySelector('.menu-icon-link').click();
-            expect(document.querySelector('.menu-hidden')).toBeDefined();
+            expect(document.body.classList.contains('menu-hidden')).toBe(true);
         });
     });
 
