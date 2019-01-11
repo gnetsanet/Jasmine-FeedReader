@@ -87,7 +87,7 @@ $(function() {
         // there is at least one .entry class in .feed container
        
         it('Entry in a feed', function(done) {
-            expect(document.body.getElementsByClassName('entry').length).toBeGreaterThan(0);
+            expect(document.querySelectorAll('.feed .entry').length).toBeGreaterThan(0);
             done();
         });
     });
